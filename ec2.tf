@@ -3,7 +3,7 @@ resource "aws_instance" "ec2_demo" {
   instance_type          = var.instance_type
   key_name               = var.key_name
   subnet_id              = "subnet-02be69a217528a59d"
-  vpc_security_group_ids = [aws_security_group.ec2_demo_sg12.id]
+  vpc_security_group_ids = [aws_security_group.ec2_demo_sg13.id]
 
   tags = {
     Name = "Created_By_Terraform_Automation"
